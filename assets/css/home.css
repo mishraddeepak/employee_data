@@ -1,0 +1,34 @@
+body{
+    background-color: bisque;
+}
+h2{
+    font-size:35px;
+    margin-bottom: 60px;
+    margin-top: 50px;
+}
+.details {
+    text-align: center;
+}
+record{
+    text-align: center;
+}
+.input-section{
+    height: 20px;
+    border-radius: 4px solid black ;
+    font-weight: 400;
+}
+.record{
+    text-align: center;
+    margin-top: 50px;
+}
+#list{
+    margin: 50px;
+}
+.content{
+    display: inline-block;
+    width: 30vw;
+    margin-top: 10px;
+}
+#download{
+text-align: center;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= title %></title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="css/home.css" />
+  </head>
+  <body>
+    <div class="details">
+      <h2>Employee Details</h2>
+      <form action="/create-contact" method="POST">
+        <input
+          type="text"
+          placeholder="Enter Employee Name"
+          name="name"
+          class="input-section"
+        />
+        <input
+          type="number"
+          placeholder="Enter Employee Contact"
+          name="phone"
+          class="input-section"
+        />
+        <button class="input-section">Add Details</button>
+      </form>
+    </div>
+    <div class="record">
+      <button class="input-section">Employee List</button>
+      <div id="list">
+        <ol>
+          <% for(let i of contact_list){%>
+
+          <li>
+            <div class="content"><%=i.name %></div>
+            <div class="content"><%=i.phone %></div>
+          </li>
+
+          <%}%>
+        </ol>
+      </div>
+    </div>
+    <div id="download">
+      <form action="/download-contacts">
+        <button>Download Data</button>
+      </form>
+
+      
+    </div>
+  </body>
+</html>
